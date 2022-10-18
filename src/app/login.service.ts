@@ -14,12 +14,12 @@ export class LoginService {
   // private _loginUserData = new BehaviorSubject<LoginUserData>;
   // loginUserData = this._loginUserData.asObservable();
 
-  public doLogin(login:any){
-    return this.http.post("http://localhost:8089/login",login,{responseType:'text' as 'json'});
+  // public doLogin(login:any){
+  //   return this.http.post("http://localhost:8089/login",login,{responseType:'text' as 'json'});
 
-  }
+  // }
   public loginSubmit(username:any, password:any){
-    let urlpath=`http://localhost:8089/user/login`;
+    let urlpath=`http://localhost:8089/login`;
       let loginobj={
         username:username,
         password:password,
